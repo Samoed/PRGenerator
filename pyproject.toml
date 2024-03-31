@@ -1,0 +1,54 @@
+[project]
+name = "prgenerator"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Roman Solomatin", email = "36135455+Samoed@users.noreply.github.com"},
+]
+dependencies = []
+requires-python = "==3.10.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.dev-dependencies]
+lint = [
+    "mypy>=1.9.0",
+    "ruff>=0.3.4",
+]
+[tool.ruff]
+fix = true
+target-version = "py310"
+line-length = 120
+extend-include = ["*.ipynb"]
+
+[tool.ruff.lint]
+select= [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "UP",  # pyupgrade
+    "RUF", # ruff
+    #"D",   # pydocstyle
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F405", "F403", "D"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+warn_redundant_casts = true
+# plugins = ["numpy.typing.mypy_plugin"]
+
+[[tool.mypy.overrides]]
+module = [
+    "scipy",
+    "sklearn",
+]
+ignore_missing_imports = true
