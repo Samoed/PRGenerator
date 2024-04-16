@@ -5,7 +5,11 @@ description = "Default template for PDM package"
 authors = [
     {name = "Roman Solomatin", email = "36135455+Samoed@users.noreply.github.com"},
 ]
-dependencies = []
+dependencies = [
+    "tqdm>=4.66.2",
+    "aiohttp>=3.9.4",
+    "requests>=2.31.0",
+]
 requires-python = "==3.10.*"
 readme = "README.md"
 license = {text = "MIT"}
