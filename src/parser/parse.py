@@ -1,6 +1,7 @@
 import asyncio
 import itertools
 import json
+import logging
 import os.path
 
 import aiohttp
@@ -8,6 +9,9 @@ import requests
 from aiohttp import ClientSession
 from tqdm import tqdm
 
+logger = logging.getLogger(__name__)
+
+logging.basicConfig(filename="parser.log", encoding="utf-8", level=logging.DEBUG)
 DATA_DIR = "data"
 batch_size = 20
 
@@ -38,9 +42,12 @@ def get_repo_pulls(token: str, repo_owner: str, repo_name: str, only_closed: boo
 
 async def get_diff_data(session: ClientSession, token: str, pull_data: dict[str, str]) -> dict[str, str]:
     pull_data = pull_data.copy()
-    async with session.get(pull_data["diff"], headers=bearer_token(token)) as response:
-        text = await response.text()
-    pull_data["diff"] = text
+    try:
+        async with session.get(pull_data["diff"], headers=bearer_token(token)) as response:
+            text = await response.text()
+        pull_data["diff"] = text
+    except Exception as e:
+        logger.error(f"Error while fetching diff data for {pull_data['url']}: {e}")
     return pull_data
 
 
@@ -91,11 +98,8 @@ async def main():
                         get_diff_data(session, token, data)
                         for data, token in zip(batch_data, tokens_iter, strict=False)
                     ]
-                    try:
-                        repo_result.extend(await asyncio.gather(*tasks))
-                    except Exception as e:
-                        print(f"Error processing batch {shift//batch_size} for {full_repo_name} page: {curr_page}:", e)
-                        continue
+                    repo_result.extend(await asyncio.gather(*tasks))
+
             repo_dir = os.path.join(DATA_DIR, f"{owner}_{repo_name}")
             if not os.path.exists(repo_dir):
                 os.makedirs(repo_dir)
