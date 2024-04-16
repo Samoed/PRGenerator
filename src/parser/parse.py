@@ -2,6 +2,7 @@ import asyncio
 import itertools
 import json
 import os.path
+from asyncio import sleep
 
 import aiohttp
 import requests
@@ -56,26 +57,32 @@ async def main():
         list_of_tokens = json.load(jsonfile)
 
     tokens_iter = itertools.cycle(list_of_tokens)
-
+    if not os.path.exists(DATA_DIR):
+        os.makedirs(DATA_DIR)
     for i, repo_data in enumerate(repos_list):
         url = repo_data["url"]
         repo_name = url.split("/")[-1]
         owner = url.split("/")[-2]
-        repo_result = []
         count_of_pulls = get_count_of_pulls(next(tokens_iter), repo_owner=owner, repo_name=repo_name)
         for curr_page in tqdm(range(count_of_pulls // 100 + 1), desc=f"[{i}/{len(repos_list)}] {owner}/{repo_name}"):
             cleaned_data = get_repo_pulls(next(tokens_iter), repo_owner=owner, repo_name=repo_name, page=curr_page)
             if not cleaned_data:
                 break
             async with aiohttp.ClientSession() as session:
-                cleaned_data_coros = [
-                    get_diff_data(session, token, data) for data, token in zip(cleaned_data, tokens_iter, strict=False)
-                ]
-                repo_result.extend(await asyncio.gather(*cleaned_data_coros))
-        if not os.path.exists(DATA_DIR):
-            os.makedirs(DATA_DIR)
-        with open(os.path.join(DATA_DIR, f"{owner}_{repo_name}.json"), "w") as jsonfile:
-            json.dump(repo_result, jsonfile)
+                try:
+                    cleaned_data_coros = [
+                        get_diff_data(session, token, data)
+                        for data, token in zip(cleaned_data, tokens_iter, strict=False)
+                    ]
+                except Exception as e:
+                    print(e)
+                    await sleep(10)
+                repo_result = await asyncio.gather(*cleaned_data_coros)
+            repo_dir = os.path.join(DATA_DIR, f"{owner}_{repo_name}")
+            if not os.path.exists(repo_dir):
+                os.makedirs(repo_dir)
+            with open(os.path.join(repo_dir, str(curr_page) + ".json"), "w") as jsonfile:
+                json.dump(repo_result, jsonfile)
 
 
 if __name__ == "__main__":
