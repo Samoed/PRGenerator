@@ -1,0 +1,502 @@
+[
+  {
+    "repo_name": "public-apis",
+    "url": "https://github.com/public-apis/public-apis",
+    "stars": 291381
+  },
+  {
+    "repo_name": "system-design-primer",
+    "url": "https://github.com/donnemartin/system-design-primer",
+    "stars": 252565
+  },
+  {
+    "repo_name": "awesome-python",
+    "url": "https://github.com/vinta/awesome-python",
+    "stars": 204184
+  },
+  {
+    "repo_name": "Python",
+    "url": "https://github.com/TheAlgorithms/Python",
+    "stars": 178408
+  },
+  {
+    "repo_name": "Python-100-Days",
+    "url": "https://github.com/jackfrued/Python-100-Days",
+    "stars": 149696
+  },
+  {
+    "repo_name": "stable-diffusion-webui",
+    "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+    "stars": 128644
+  },
+  {
+    "repo_name": "youtube-dl",
+    "url": "https://github.com/ytdl-org/youtube-dl",
+    "stars": 128280
+  },
+  {
+    "repo_name": "transformers",
+    "url": "https://github.com/huggingface/transformers",
+    "stars": 124348
+  },
+  {
+    "repo_name": "HelloGitHub",
+    "url": "https://github.com/521xueweihan/HelloGitHub",
+    "stars": 84509
+  },
+  {
+    "repo_name": "thefuck",
+    "url": "https://github.com/nvbn/thefuck",
+    "stars": 82672
+  },
+  {
+    "repo_name": "langchain",
+    "url": "https://github.com/langchain-ai/langchain",
+    "stars": 82231
+  },
+  {
+    "repo_name": "pytorch",
+    "url": "https://github.com/pytorch/pytorch",
+    "stars": 77543
+  },
+  {
+    "repo_name": "django",
+    "url": "https://github.com/django/django",
+    "stars": 76621
+  },
+  {
+    "repo_name": "models",
+    "url": "https://github.com/tensorflow/models",
+    "stars": 76564
+  },
+  {
+    "repo_name": "fastapi",
+    "url": "https://github.com/tiangolo/fastapi",
+    "stars": 70580
+  },
+  {
+    "repo_name": "yt-dlp",
+    "url": "https://github.com/yt-dlp/yt-dlp",
+    "stars": 69981
+  },
+  {
+    "repo_name": "core",
+    "url": "https://github.com/home-assistant/core",
+    "stars": 68411
+  },
+  {
+    "repo_name": "flask",
+    "url": "https://github.com/pallets/flask",
+    "stars": 66262
+  },
+  {
+    "repo_name": "funNLP",
+    "url": "https://github.com/fighting41love/funNLP",
+    "stars": 63609
+  },
+  {
+    "repo_name": "awesome-machine-learning",
+    "url": "https://github.com/josephmisiti/awesome-machine-learning",
+    "stars": 63407
+  },
+  {
+    "repo_name": "devops-exercises",
+    "url": "https://github.com/bregman-arie/devops-exercises",
+    "stars": 63231
+  },
+  {
+    "repo_name": "ansible",
+    "url": "https://github.com/ansible/ansible",
+    "stars": 61059
+  },
+  {
+    "repo_name": "keras",
+    "url": "https://github.com/keras-team/keras",
+    "stars": 60880
+  },
+  {
+    "repo_name": "whisper",
+    "url": "https://github.com/openai/whisper",
+    "stars": 59749
+  },
+  {
+    "repo_name": "cpython",
+    "url": "https://github.com/python/cpython",
+    "stars": 59431
+  },
+  {
+    "repo_name": "scikit-learn",
+    "url": "https://github.com/scikit-learn/scikit-learn",
+    "stars": 58008
+  },
+  {
+    "repo_name": "manim",
+    "url": "https://github.com/3b1b/manim",
+    "stars": 57742
+  },
+  {
+    "repo_name": "gpt4free",
+    "url": "https://github.com/xtekky/gpt4free",
+    "stars": 56909
+  },
+  {
+    "repo_name": "PayloadsAllTheThings",
+    "url": "https://github.com/swisskyrepo/PayloadsAllTheThings",
+    "stars": 56580
+  },
+  {
+    "repo_name": "d2l-zh",
+    "url": "https://github.com/d2l-ai/d2l-zh",
+    "stars": 56446
+  },
+  {
+    "repo_name": "gpt_academic",
+    "url": "https://github.com/binary-husky/gpt_academic",
+    "stars": 54395
+  },
+  {
+    "repo_name": "llama",
+    "url": "https://github.com/meta-llama/llama",
+    "stars": 52330
+  },
+  {
+    "repo_name": "localstack",
+    "url": "https://github.com/localstack/localstack",
+    "stars": 52023
+  },
+  {
+    "repo_name": "face_recognition",
+    "url": "https://github.com/ageitgey/face_recognition",
+    "stars": 51677
+  },
+  {
+    "repo_name": "private-gpt",
+    "url": "https://github.com/zylon-ai/private-gpt",
+    "stars": 51468
+  },
+  {
+    "repo_name": "requests",
+    "url": "https://github.com/psf/requests",
+    "stars": 51308
+  },
+  {
+    "repo_name": "sherlock",
+    "url": "https://github.com/sherlock-project/sherlock",
+    "stars": 51095
+  },
+  {
+    "repo_name": "scrapy",
+    "url": "https://github.com/scrapy/scrapy",
+    "stars": 50792
+  },
+  {
+    "repo_name": "Real-Time-Voice-Cloning",
+    "url": "https://github.com/CorentinJ/Real-Time-Voice-Cloning",
+    "stars": 50638
+  },
+  {
+    "repo_name": "gpt-engineer",
+    "url": "https://github.com/gpt-engineer-org/gpt-engineer",
+    "stars": 50357
+  },
+  {
+    "repo_name": "you-get",
+    "url": "https://github.com/soimort/you-get",
+    "stars": 49212
+  },
+  {
+    "repo_name": "faceswap",
+    "url": "https://github.com/deepfakes/faceswap",
+    "stars": 49117
+  },
+  {
+    "repo_name": "screenshot-to-code",
+    "url": "https://github.com/abi/screenshot-to-code",
+    "stars": 48265
+  },
+  {
+    "repo_name": "grok-1",
+    "url": "https://github.com/xai-org/grok-1",
+    "stars": 47404
+  },
+  {
+    "repo_name": "openpilot",
+    "url": "https://github.com/commaai/openpilot",
+    "stars": 47338
+  },
+  {
+    "repo_name": "open-interpreter",
+    "url": "https://github.com/OpenInterpreter/open-interpreter",
+    "stars": 47284
+  },
+  {
+    "repo_name": "rich",
+    "url": "https://github.com/Textualize/rich",
+    "stars": 46945
+  },
+  {
+    "repo_name": "yolov5",
+    "url": "https://github.com/ultralytics/yolov5",
+    "stars": 46659
+  },
+  {
+    "repo_name": "big-list-of-naughty-strings",
+    "url": "https://github.com/minimaxir/big-list-of-naughty-strings",
+    "stars": 45834
+  },
+  {
+    "repo_name": "DeepFaceLab",
+    "url": "https://github.com/iperov/DeepFaceLab",
+    "stars": 45218
+  },
+  {
+    "repo_name": "professional-programming",
+    "url": "https://github.com/charlax/professional-programming",
+    "stars": 45134
+  },
+  {
+    "repo_name": "hackingtool",
+    "url": "https://github.com/Z4nzu/hackingtool",
+    "stars": 42628
+  },
+  {
+    "repo_name": "pandas",
+    "url": "https://github.com/pandas-dev/pandas",
+    "stars": 41873
+  },
+  {
+    "repo_name": "CppCoreGuidelines",
+    "url": "https://github.com/isocpp/CppCoreGuidelines",
+    "stars": 41433
+  },
+  {
+    "repo_name": "python-patterns",
+    "url": "https://github.com/faif/python-patterns",
+    "stars": 39322
+  },
+  {
+    "repo_name": "ChatGLM-6B",
+    "url": "https://github.com/THUDM/ChatGLM-6B",
+    "stars": 39085
+  },
+  {
+    "repo_name": "MetaGPT",
+    "url": "https://github.com/geekan/MetaGPT",
+    "stars": 38862
+  },
+  {
+    "repo_name": "PaddleOCR",
+    "url": "https://github.com/PaddlePaddle/PaddleOCR",
+    "stars": 38215
+  },
+  {
+    "repo_name": "ailearning",
+    "url": "https://github.com/apachecn/ailearning",
+    "stars": 37976
+  },
+  {
+    "repo_name": "ColossalAI",
+    "url": "https://github.com/hpcaitech/ColossalAI",
+    "stars": 37775
+  },
+  {
+    "repo_name": "cheat.sh",
+    "url": "https://github.com/chubin/cheat.sh",
+    "stars": 37401
+  },
+  {
+    "repo_name": "Deep-Learning-Papers-Reading-Roadmap",
+    "url": "https://github.com/floodsung/Deep-Learning-Papers-Reading-Roadmap",
+    "stars": 37335
+  },
+  {
+    "repo_name": "black",
+    "url": "https://github.com/psf/black",
+    "stars": 37334
+  },
+  {
+    "repo_name": "bert",
+    "url": "https://github.com/google-research/bert",
+    "stars": 36938
+  },
+  {
+    "repo_name": "sentry",
+    "url": "https://github.com/getsentry/sentry",
+    "stars": 36785
+  },
+  {
+    "repo_name": "Open-Assistant",
+    "url": "https://github.com/LAION-AI/Open-Assistant",
+    "stars": 36605
+  },
+  {
+    "repo_name": "interview_internal_reference",
+    "url": "https://github.com/0voice/interview_internal_reference",
+    "stars": 36075
+  },
+  {
+    "repo_name": "stablediffusion",
+    "url": "https://github.com/Stability-AI/stablediffusion",
+    "stars": 36033
+  },
+  {
+    "repo_name": "text-generation-webui",
+    "url": "https://github.com/oobabooga/text-generation-webui",
+    "stars": 35665
+  },
+  {
+    "repo_name": "python-cheatsheet",
+    "url": "https://github.com/gto76/python-cheatsheet",
+    "stars": 35361
+  },
+  {
+    "repo_name": "wtfpython",
+    "url": "https://github.com/satwikkansal/wtfpython",
+    "stars": 35017
+  },
+  {
+    "repo_name": "DragGAN",
+    "url": "https://github.com/XingangPan/DragGAN",
+    "stars": 34899
+  },
+  {
+    "repo_name": "diagrams",
+    "url": "https://github.com/mingrammer/diagrams",
+    "stars": 34774
+  },
+  {
+    "repo_name": "TaskMatrix",
+    "url": "https://github.com/chenfei-wu/TaskMatrix",
+    "stars": 34511
+  },
+  {
+    "repo_name": "GFPGAN",
+    "url": "https://github.com/TencentARC/GFPGAN",
+    "stars": 34498
+  },
+  {
+    "repo_name": "Fooocus",
+    "url": "https://github.com/lllyasviel/Fooocus",
+    "stars": 34424
+  },
+  {
+    "repo_name": "odoo",
+    "url": "https://github.com/odoo/odoo",
+    "stars": 34359
+  },
+  {
+    "repo_name": "airflow",
+    "url": "https://github.com/apache/airflow",
+    "stars": 34357
+  },
+  {
+    "repo_name": "mitmproxy",
+    "url": "https://github.com/mitmproxy/mitmproxy",
+    "stars": 34246
+  },
+  {
+    "repo_name": "gym",
+    "url": "https://github.com/openai/gym",
+    "stars": 33834
+  },
+  {
+    "repo_name": "MockingBird",
+    "url": "https://github.com/babysor/MockingBird",
+    "stars": 33754
+  },
+  {
+    "repo_name": "12306",
+    "url": "https://github.com/testerSunshine/12306",
+    "stars": 33604
+  },
+  {
+    "repo_name": "FastChat",
+    "url": "https://github.com/lm-sys/FastChat",
+    "stars": 33545
+  },
+  {
+    "repo_name": "shadowsocks",
+    "url": "https://github.com/shadowsocks/shadowsocks",
+    "stars": 33505
+  },
+  {
+    "repo_name": "XX-Net",
+    "url": "https://github.com/XX-net/XX-Net",
+    "stars": 32663
+  },
+  {
+    "repo_name": "DeepSpeed",
+    "url": "https://github.com/microsoft/DeepSpeed",
+    "stars": 32473
+  },
+  {
+    "repo_name": "jieba",
+    "url": "https://github.com/fxsjy/jieba",
+    "stars": 32346
+  },
+  {
+    "repo_name": "HanLP",
+    "url": "https://github.com/hankcs/HanLP",
+    "stars": 32217
+  },
+  {
+    "repo_name": "ComfyUI",
+    "url": "https://github.com/comfyanonymous/ComfyUI",
+    "stars": 32019
+  },
+  {
+    "repo_name": "cli",
+    "url": "https://github.com/httpie/cli",
+    "stars": 31732
+  },
+  {
+    "repo_name": "nanoGPT",
+    "url": "https://github.com/karpathy/nanoGPT",
+    "stars": 31433
+  },
+  {
+    "repo_name": "streamlit",
+    "url": "https://github.com/streamlit/streamlit",
+    "stars": 31394
+  },
+  {
+    "repo_name": "ccxt",
+    "url": "https://github.com/ccxt/ccxt",
+    "stars": 31254
+  },
+  {
+    "repo_name": "ray",
+    "url": "https://github.com/ray-project/ray",
+    "stars": 30915
+  },
+  {
+    "repo_name": "certbot",
+    "url": "https://github.com/certbot/certbot",
+    "stars": 30791
+  },
+  {
+    "repo_name": "30-Days-Of-Python",
+    "url": "https://github.com/Asabeneh/30-Days-Of-Python",
+    "stars": 30751
+  },
+  {
+    "repo_name": "llama_index",
+    "url": "https://github.com/run-llama/llama_index",
+    "stars": 30627
+  },
+  {
+    "repo_name": "sqlmap",
+    "url": "https://github.com/sqlmapproject/sqlmap",
+    "stars": 30470
+  },
+  {
+    "repo_name": "Python",
+    "url": "https://github.com/geekcomputers/Python",
+    "stars": 29746
+  },
+  {
+    "repo_name": "pytorch-image-models",
+    "url": "https://github.com/huggingface/pytorch-image-models",
+    "stars": 29621
+  }
+]
