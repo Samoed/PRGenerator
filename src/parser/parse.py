@@ -36,8 +36,13 @@ def process_pull_data(json_data):
 def get_repo_pulls(token: str, repo_owner: str, repo_name: str, only_closed: bool = True, page: int = 1) -> list[dict]:
     url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/pulls"
     params = {"state": "closed" if only_closed else "all", "per_page": 100, "page": page}
-    text = requests.get(url, headers=bearer_token(token), params=params).text
-    return list(map(process_pull_data, json.loads(text)))
+    text = requests.get(url, headers=bearer_token(token), params=params).json()
+    if text == dict(message="Server Error"):
+        logger.error(f"{url=} {params=} Server error")
+        text_js = []
+    else:
+        text_js = list(map(process_pull_data, text))
+    return text_js
 
 
 async def get_diff_data(session: ClientSession, token: str, pull_data: dict[str, str]) -> dict[str, str]:
@@ -58,7 +63,7 @@ def get_count_of_pulls(token: str, repo_owner: str, repo_name: str) -> int:
 
 
 async def main():
-    with open("repos_selected.json") as jsonfile:
+    with open("not_parsed.json") as jsonfile:
         repos_list = json.load(jsonfile)
     with open("tokens_private.json") as jsonfile:
         list_of_tokens = json.load(jsonfile)
@@ -92,13 +97,10 @@ async def main():
                 break
             repo_result = []
             async with aiohttp.ClientSession(trust_env=True) as session:
-                for shift in range(0, len(cleaned_data), batch_size):
-                    batch_data = cleaned_data[shift : shift + batch_size]
-                    tasks = [
-                        get_diff_data(session, token, data)
-                        for data, token in zip(batch_data, tokens_iter, strict=False)
-                    ]
-                    repo_result.extend(await asyncio.gather(*tasks))
+                tasks = [
+                    get_diff_data(session, token, data) for data, token in zip(cleaned_data, tokens_iter, strict=False)
+                ]
+                repo_result = await asyncio.gather(*tasks)
 
             repo_dir = os.path.join(DATA_DIR, f"{owner}_{repo_name}")
             if not os.path.exists(repo_dir):
